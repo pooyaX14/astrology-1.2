@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable=no">
+    <title>Elements | Astrology</title>
+    <!--=============== Global Css Start ===============-->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendors/select2/css/select2.min.css">
+    <link rel="stylesheet" href="vendors/iCheck/css/all.css">
+    <link rel="stylesheet" href="vendors/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="src/vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/sweetalert2.css">
+    <link rel="stylesheet" type="text/css" href="vendors/wow/css/animate.css">
+    <link rel="stylesheet" href="vendors/bootstrap_select2/css/select2-bootstrap.min.css">
+    <!--=============== Global Css End ===============-->
+    <!--=============== Custom Css Start ===============-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!--=============== Custom Css End ===============-->
+</head>
+<body>
+<!--=============== Preloader Section Start ===============-->
+<div class="preloader" style="position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  backface-visibility: hidden;
+  background: #ffffff;">
+    <div class="preloader-image" style="position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -150px 0 0 -300px;">
+        <img src="images/preloader.gif" alt="loader-missing">
+    </div>
+</div>
+<!--=============== Preloader Section End ===============-->
+<!--=============== Header Section Start ===============-->
+<section class="backgroundclr">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 tpbanner_align">
+                <a href="#" class="header_border1 hidden-xs font12">Advertise With Us</a>
+                <div class="header_border hidden-xs font12">Language:
+                    <ul>
+                        <li class="dropdown lang_dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">EN <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Hindi</a></li>
+                                <li><a href="#">English</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix visible-xs-block"></div>
+                <span class="header_border header_text hidden-xs font12">Follow Us</span>
+                <span class="head_icons"><a href="#"><i class="fa fa-facebook-square header_icons fa-lg"></i></a>
+                      <a href="#"><i class="fa fa-twitter-square header_icons fa-lg"></i></a>
+                      <a href="#"><i class="fa fa-google-plus-square header_icons fa-lg" aria-hidden="true"></i></a>
+                </span>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+    <div class="row text-right">
+        <div class="col-md-5 col-sm-2"></div>
+        <div class="col-md-7 col-sm-10 col-xs-12">
+            <div class="clearfix visible-sm-block"></div>
+            <div class="row">
+                <div class="col-sm-2 col-xs-2 head_signs">
+                    <a href="#">
+                        <div class="bg-info header_bg center-block">
+                            <img src="images/dislike.png" alt="Image missing">
+                        </div>
+                        <div class="text-center info1 font13 hidden-xs">Secret Crush</div>
+                    </a>
+                </div>
+                <div class="col-sm-2 col-xs-2 text-center head_signs">
+                    <a href="#">
+                        <div class="bg-info header_bg center-block">
+                            <img src="images/head.png" alt="Image missing">
+                        </div>
+                        <div class="text-center info1 font13 hidden-xs">Psychics</div>
+                    </a>
+                </div>
+                <div class="col-sm-2 col-xs-2 text-center head_signs">
+                    <a href="#">
+                        <div class="bg-info header_bg center-block">
+                            <img src="images/heart.png" alt="Image missing">
+                        </div>
+                        <div class="text-center info1 font13 hidden-xs">Love Tarot</div>
+                    </a>
+                </div>
+
+                <div class="col-sm-2 col-xs-2 text-center head_signs">
+                    <a href="#">
+                        <div class="bg-info header_bg center-block">
+                            <img src="images/man-with-tie.png" alt="Image missing">
+                        </div>
+                        <div class="text-center info1 font13 hidden-xs">Career Match</div>
+                    </a>
+                </div>
+                <div class="col-sm-2 col-xs-2 text-center head_signs">
+                    <a href="#">
+                        <div class="bg-info header_bg center-block">
+                            <img src="images/yin-and-yang.png" alt="Image missing">
+                        </div>
+                        <div class="text-center info1 font13 hidden-xs">Ying Yang</div>
+                    </a>
+                </div>
+                <div class="col-sm-2 col-xs-2 text-center head_signs">
+                    <a href="#">
+                        <div class="bg-info header_bg center-block">
+                            <img src="images/calendar.png" alt="Image missing">
+                        </div>
+                        <div class="text-center info1 font13 hidden-xs">Daily Tarot</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header col-md-4 col-sm-5 col-xs-12 nav_head">
+                    <button type="button" class="navbar-toggle m-t-20 font18" data-toggle="collapse"
+                            data-target="#myNavbar">
+                        <span>
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                    <a href="index.html">
+                        <img src="images/leo-sign1.png" alt="logo missing" class="brand_name"> <span
+                            class="text-info font42">Astrology</span>
+                    </a>
+                    <p class="brand_name text-primary font12 head_info">KNOW YOUR SIGN</p>
+
+                </div>
+                <div class="navbar-collapse collapse col-md-8 col-sm-7 col-xs-12 nav navbar-right nav_menubar"
+                     id="myNavbar">
+                    <ul class="nav navbar-nav header_nav">
+                        <li class="header_li active">
+                            <a href="index.html" class="text-info">
+                                <i class="fa fa-home" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="header_li">
+                            <a href="signs.html" class="text-info">Astrology Signs</a>
+                        </li>
+                        <li class="header_li">
+                            <a href="gemstones.html" class="text-info">Gemstones</a>
+                        </li>
+
+                        <li class="header_li">
+                            <a href="love_compatibility.html" class="text-info"><i class="fa fa-heart"></i>  Compatibility</a>
+                        </li>
+                        <li class="header_li">
+                            <a href="games.html" class="text-info">Games</a>
+                        </li>
+                        <li class="header_li">
+                            <a href="blog.html" class="text-info">Blog</a>
+                        </li>
+                        <li class="dropdown dropdown_modified">
+                            <a data-toggle="dropdown" href="#" class="text-info dropdown-toggle">Pages <span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu dropdown_mod" data-dropdown-in="fadeInUp"
+                                data-dropdown-out="fadeOut">
+                                <li><a href="index2.html">Home Page2</a></li>
+                                <li><a href="blog_single.html">Blog Single Post</a></li>
+                                <li><a href="blog_category.html">Blog Category</a></li>
+                                <li><a href="signs_single_post.html">Signs Single Page</a></li>
+                                <li><a href="gemstones_single.html">Gemstones Single Page</a></li>
+                                <li><a href="love_compatibility_result.html">Love Compatibility Result</a></li>
+                                <li><a href="elements.html">Elements</a></li>
+                            </ul>
+                        </li>
+                        <li class="header_li">
+                            <a href="contact_us.html" class="text-info">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="index_center card_text">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="m-t-20 bg-white breadcrumb text-center">
+                    <li>
+                        <a href="index.html" class="font13">Home</a>
+                    </li>
+                    <li>
+                        <img src="images/right-arrow1.png" alt="arrow" class="blog_right_arrow">
+                    </li>
+                    <li>
+                        <span class="active text-primary font13">Elements</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--=============== Header Section End ===============-->
+<!--=============== Body Section Start ===============-->
+<div class="container">
+    <div class="row font16">
+        <div class="col-md-4 col-sm-6 col-xs-12 button_margin">
+            <div class="row">
+                <div class="col-md-12 lineheight26">
+                    <span class='color_grey'>Title Size:</span>
+                    <span class="color_black">24px</span><br>
+                    <span class='color_grey'>Title Font:</span>
+                    <span class="color_black">Montserrat</span><br>
+                    <span class='color_grey'>Title Font Color:</span>
+                    <span class="color_black">#e36480</span><br>
+                    <span class='color_grey'>Line Color:</span>
+                    <span class="color_black">#f2f2f2</span><br>
+                    <span class='color_grey'>Line Height:</span>
+                    <span class="color_black">2px</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 button_margin">
+            <div class="row">
+                <div class="col-md-12 lineheight26">
+                    <span class='color_grey'>Section 1/2/3 Size:</span>
+                    <span class="color_black">16px</span><br>
+                    <span class='color_grey'>Section 1/2/3 Font:</span>
+                    <span class="color_black">Montserrat</span><br>
+                    <span class='color_grey'>Section 1/2/3 Font Color:</span>
+                    <span class="color_black">#4b3065</span><br>
+                    <span class='color_grey'>Description Text Font:</span>
+                    <span class="color_black">Montserrat</span><br>
+                    <span class='color_grey'>Description Text Color:</span>
+                    <span class="color_black">#4b3065</span><br>
+                    <span class='color_grey'>Description Text Spacing:</span>
+                    <span class="color_black">24 pt</span><br>
+                    <span class='color_grey'>Description Text Sizing:</span>
+                    <span class="color_black">15px</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 button_margin">
+            <div class="row">
+                <div class="col-md-12 lineheight26">
+                    <span class='color_grey'>Light Grey Background Color:</span>
+                    <span class="color_black">#ebebeb</span><br>
+                    <span class='color_grey'>Holder Dropshadow:</span>
+                    <span class="color_black">2 px, #e1e1e1</span><br>
+                    <span class='color_grey'>Dropdown Circle Color:</span>
+                    <span class="color_black">#4b3065</span><br>
+                    <span class='color_grey'>Dropdown Enabled Circle Color:</span>
+                    <span class="color_black">#e36480</span><br>
+                    <span class='color_grey'>White Arrow Icon:</span>
+                    <span class="color_black">#ffffff</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 m-t-26">
+            <h1>Accordions</h1>
+            <hr>
+            <div class="panel-group elements_desc" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h5 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="accord_desc">
+                                Section 1<span class="fa-stack pull-right"><i
+                                    class="fa fa-circle fa-stack-2x text-primary"></i><i
+                                        class="fa fa-angle-down fa-stack-1x text-white"></i></span>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body text-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel3 panel-default">
+                    <div class="panel-heading">
+                        <h5 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="accord_desc">
+                                Section 2<span class="fa-stack pull-right"><i
+                                    class="fa fa-circle fa-stack-2x text-primary"></i><i
+                                        class="fa fa-angle-down fa-stack-1x text-white"></i></span>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body text-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel3 panel-default">
+                    <div class="panel-heading">
+                        <h5 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="accord_desc">
+                                Section 3<span class="fa-stack pull-right"><i
+                                    class="fa fa-circle fa-stack-2x text-primary"></i><i
+                                        class="fa fa-angle-down fa-stack-1x text-white"></i></span>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body text-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequats.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 m-t-26">
+            <h1>Toggles</h1>
+            <hr>
+            <div class="panel-group elements_desc" id="toggle">
+                <div class="panel panel3 panel-default">
+                    <div class="panel-heading">
+                        <h5 class="panel-title">
+                            <a data-toggle="collapse" href="#collapse5" class="accord_desc">Section 1<span
+                                    class="fa-stack pull-right"><i
+                                    class="fa fa-circle fa-stack-2x text-primary"></i><i
+                                    class="fa fa-angle-down fa-stack-1x text-white"></i></span>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapse5" class="panel-collapse collapse">
+                        <div class="panel-body text-info">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel3 panel-default">
+                    <div class="panel-heading">
+                        <h5 class="panel-title">
+                            <a data-toggle="collapse" href="#collapse6" class="accord_desc">Section 2<span
+                                    class="fa-stack pull-right"><i
+                                    class="fa fa-circle fa-stack-2x text-primary"></i><i
+                                    class="fa fa-angle-down fa-stack-1x text-white"></i></span>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapse6" class="panel-collapse collapse">
+                        <div class="panel-body text-info">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel3 panel-default">
+                    <div class="panel-heading">
+                        <h5 class="panel-title">
+                            <a data-toggle="collapse" href="#collapse7" class="accord_desc">Section 3<span
+                                    class="fa-stack pull-right"><i
+                                    class="fa fa-circle fa-stack-2x text-primary"></i><i
+                                    class="fa fa-angle-down fa-stack-1x text-white"></i></span>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapse7" class="panel-collapse collapse">
+                        <div class="panel-body text-info">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 m-t-10">
+            <h1>Tabs</h1>
+            <hr>
+            <ul class="nav nav-tabs elements_desc" role="tablist">
+                <li class="active">
+                    <a href="#tab1" role="tab" data-toggle="tab">Section 1</a>
+                </li>
+                <li>
+                    <a href="#tab2" role="tab" data-toggle="tab">Section 2</a>
+                </li>
+            </ul>
+            <div class="tab-content tab_content">
+                <div class="tab-pane active" id="tab1">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/home_pic.png" alt="image missing" class="img-responsive">
+                        </div>
+                        <div class="col-md-6 text-info font14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+                            alias architecto consequuntur dolorum exercitationem.minima modi, placeat quam quisquam
+                            saepe.
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab2">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/home_pic1.png" alt="image missing" class="img-responsive">
+                        </div>
+                        <div class="col-md-6 text-info font14">
+                            Vero voluptas voluptatum. Aperiam asperiores autem deserunt doloremque incidunt laudantium
+                            minima modi, placeat quam quisquam saepe.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 m-t-10">
+            <h1>Tour Section</h1>
+            <hr>
+            <div class="row">
+                <div class="col-md-4 m-t-10">
+                    <nav class="nav-sidebar">
+                        <ul class="nav tabs">
+                            <li class="active text-center">
+                                <a href="#tab3" data-toggle="tab" class="mont">Section 1</a>
+                            </li>
+                            <li class="text-center">
+                                <a href="#tab4" data-toggle="tab" class="mont">Section 2</a>
+                            </li>
+                            <li class="text-center">
+                                <a href="#tab5" data-toggle="tab" class="mont">Section 3</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-8 m-t-10">
+                    <div class="tab-content tour_content text-info">
+                        <div class="tab-pane active text-style font14" id="tab3">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda commodi
+                                consequuntur dolorem eos facere fuga hic itaque magnam necessitatibus, possimus quae
+                                quisquam, tempora ullam.
+                            </p>
+                            <p>
+                                Alias assumenda commodi consequuntur dolorem eos.
+                            </p>
+                        </div>
+                        <div class="tab-pane text-style font14" id="tab4">
+                            <p>
+                                Alias assumenda commodi consequuntur dolorem eos facere fuga hic itaque magnam
+                                necessitatibus, possimus quae quisquam, tempora ullam.Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="tab-pane text-style font14" id="tab5">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda commodi
+                                consequuntur dolorem eos facere fuga hic itaque magnam necessitatibus, possimus quae
+                                quisquam, tempora ullam.
+                            </p>
+                            <p>
+                                Alias assumenda commodi consequuntur dolorem eos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 m-t-26">
+            <h1>Buttons</h1>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-4 m-t-10">
+                    <span class='color_grey'>Style:</span>
+                    <span class="color_black">Static</span><br>
+                    <span class='color_grey'>Font:</span>
+                    <span class="color_black">Montserrat</span><br>
+                    <span class='color_grey'>Font Size:</span>
+                    <span class="color_black">15px</span><br>
+                    <span class='color_grey'>Font Color:</span>
+                    <span class="color_black">#ffffff</span><br>
+                    <span class='color_grey'>Button Color:</span>
+                    <span class="color_black">#e36480</span><br>
+                    <span class='color_grey'>Button Radius:</span>
+                    <span class="color_black">25px</span><br><br>
+
+                    <a href="#" class="btn btn-primary btn-sm">Submit</a>
+                </div>
+
+                <div class="col-md-4 m-t-10">
+                    <span class='color_grey'>Style:</span>
+                    <span class="color_black">Static</span><br>
+                    <span class='color_grey'>Font:</span>
+                    <span class="color_black">Montserrat</span><br>
+                    <span class='color_grey'>Font Size:</span>
+                    <span class="color_black">15px</span><br>
+                    <span class='color_grey'>Font Color:</span>
+                    <span class="color_black">#ffffff</span><br>
+                    <span class='color_grey'>Button Color:</span>
+                    <span class="color_black">#c7c7c7</span><br>
+                    <span class='color_grey'>Button Radius:</span>
+                    <span class="color_black">25px</span><br><br>
+                    <a href="#" class="btn btn-default btn-sm">Clear</a>
+                </div>
+                <div class="col-md-4 m-t-10">
+                    <span class='color_grey'>Style:</span>
+                    <span class="color_black">Hover</span><br>
+                    <span class='color_grey'>Font:</span>
+                    <span class="color_black">Montserrat</span><br>
+                    <span class='color_grey'>Font Size:</span>
+                    <span class="color_black">15px</span><br>
+                    <span class='color_grey'>Font Color:</span>
+                    <span class="color_black">#a58ebc</span><br>
+                    <span class='color_grey'>Button Color:</span>
+                    <span class="color_black">#4b3065</span><br>
+                    <span class='color_grey'>Button Radius:</span>
+                    <span class="color_black">25px</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-6 m-t-10">
+                    <span class='color_grey'>Style:</span>
+                    <span class="color_black">Static</span><br>
+                    <span class='color_grey'>Icon Color:</span>
+                    <span class="color_black">#4b3065</span><br>
+                    <br>
+                    <a href="#">
+                        <i class="fa fa-long-arrow-left text-info icon_hover"></i>
+                    </a>
+                </div>
+                <div class="col-md-6 m-t-10">
+                    <span class='color_grey'>Style:</span>
+                    <span class="color_black">Hover</span><br>
+                    <span class='color_grey'>Icon Color:</span>
+                    <span class="color_black">#e36480</span><br><br>
+                    <a href="#">
+                        <i class="fa fa-long-arrow-right text-info icon_hover"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row button_margin">
+        <div class="col-md-6 bg-info">
+            <div class="row">
+                <div class="col-md-9 col-md-offset-3">
+                    <div class="btn_adjust">
+                        <a href="#" class="btn btn-info btn-md btn_align">Show My Matches
+                            <i class="fa fa-search btn_icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 bg-element">
+            <div class="row">
+                <div class="col-md-9 col-md-offset-3">
+                    <div class="btn_adjust">
+                        <a href="#" class="btn btn-primary btn-md btn_element">Get This Reading For Free
+                            <i class="fa fa-search btn_icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row lists">
+        <div class="col-md-12 m-t-26">
+            <h1>Lists</h1>
+            <hr>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6 text-info">
+            <ul>
+                <li><i class="fa fa-caret-right text-primary"></i>Aenean auctor</li>
+                <li><i class="fa fa-caret-right text-primary"></i>Et urna aliquam</li>
+                <li><i class="fa fa-caret-right text-primary"></i>Erat vilupat</li>
+            </ul>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6 text-info">
+            <ul>
+                <li><i class="fa fa-check text-primary"></i>Aenean auctor</li>
+                <li><i class="fa fa-check text-primary"></i>Et urna aliquam</li>
+                <li><i class="fa fa-check text-primary"></i>Erat vilupat</li>
+            </ul>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6 text-info">
+            <ul>
+                <li><i class="fa fa-plus text-primary"></i>Aenean auctor</li>
+                <li><i class="fa fa-plus text-primary"></i>Et urna aliquam</li>
+                <li><i class="fa fa-plus text-primary"></i>Erat vilupat</li>
+            </ul>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6 text-info">
+            <ul>
+                <li><i class="fa fa-star text-primary"></i>Aenean auctor</li>
+                <li><i class="fa fa-star text-primary"></i>Et urna aliquam</li>
+                <li><i class="fa fa-star text-primary"></i>Erat vilupat</li>
+            </ul>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6 text-info">
+            <ul>
+                <li><i class="fa fa-circle text-primary"></i>Aenean auctor</li>
+                <li><i class="fa fa-circle text-primary"></i>Et urna aliquam</li>
+                <li><i class="fa fa-circle text-primary"></i>Erat vilupat</li>
+            </ul>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6 text-info">
+            <ul>
+                <li><span class="text-primary">1.</span> Aenean auctor</li>
+                <li><span class="text-primary">2.</span> Et urna aliquam</li>
+                <li><span class="text-primary">3.</span> Erat vilupat</li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-12 m-t-26">
+            <h1>Tables</h1>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 m-t-20">
+            <div class="table-responsive">
+            <table class="table table1 table-bordered text-info">
+                <tr>
+                    <th>HEADING 1</th>
+                    <th>HEADING 2</th>
+                    <th>HEADING 3</th>
+                </tr>
+                <tr class="font14">
+                    <td>Item 1</td>
+                    <td>Nemo emin ipsam</td>
+                    <td>$5.99</td>
+                </tr>
+                <tr>
+                    <td>Item 2</td>
+                    <td>Takimata sanctus est</td>
+                    <td>$5.99</td>
+                </tr>
+                <tr>
+                    <td>Item 3</td>
+                    <td>Richardson ad squid</td>
+                    <td>$5.99</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>Sea takimata sanctus</td>
+                    <td>$5.99</td>
+                </tr>
+            </table>
+                </div>
+        </div>
+        <div class="col-md-6 m-t-20">
+            <div class="table-responsive">
+            <table class="table table1 table-bordered text-info">
+                <tr>
+                    <th style="width: 25%;">HEADING 1</th>
+                    <td class="font14">Item 1</td>
+                </tr>
+                <tr>
+                    <th>HEADING 2</th>
+                    <td>Nemo emin ipsam</td>
+                </tr>
+                <tr>
+                    <th>HEADING 3</th>
+                    <td>$5.99</td>
+                </tr>
+                <tr>
+                    <th>TOTAL</th>
+                    <td>$5.99</td>
+                </tr>
+            </table>
+                </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 m-t-20">
+            <h1>Forms</h1>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+            <form>
+                <div class="col-md-6 m-t-20">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">General Form</div>
+                        <div class="panel-body">
+                            <div class="col-md-12">
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <label for="text_input5" class="label_height text-info">Text</label>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="text" id="text_input5" class="form-control"/>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <label class="text-info">Radio</label>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="radio" class="radio2" name="radio5"/>&nbsp;<span
+                                            class="font13 text-info">Radio 1</span>
+                                        <input type="radio" class="radio2" name="radio5"/>&nbsp;<span
+                                            class="font13 text-info">Radio 2</span>
+                                    </div>
+                                </div>
+                                <div class="row form-group wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s">
+                                    <div class="col-md-12">
+                                        <label class="text-info">Checkbox</label>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="checkbox"/>&nbsp;<span class="font13 text-info">Checkbox 1</span>
+                                        <input type="checkbox"/>&nbsp;<span class="font13 text-info">Checkbox 2</span>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <label class="text-info">Select</label>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <select class="select2">
+                                            <option value="">Choose</option>
+                                            <option>Sample 1</option>
+                                            <option>Sample 2</option>
+                                            <option>Sample 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <label class="text-info">Textarea</label>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <textarea rows="8"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row form-group col-md-6 col-sm-6">
+                                    <div class="row">
+                                        <div class="col-sm-11">
+                                            <label for="text_input6" class="label_height text-info">Warning</label>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <input type="text" id="text_input6"
+                                                   class="input_warning form-control bg-white"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row col-md-6 col-sm-6 pull_align">
+                                    <div class="row">
+                                        <div class="col-sm-11 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 form-group">
+                                            <label for="text_input7" class="label_height text-info">Info</label>
+                                            <input type="text" id="text_input7"
+                                                   class="input_info form-control bg-white"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group col-md-6 col-sm-6">
+                                    <div class="row">
+                                        <div class="col-sm-11">
+                                            <label for="text_input6" class="label_height text-info">Error</label>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <input type="text" id="text_input8"
+                                                   class="input_danger form-control bg-white"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row col-md-6 col-sm-6 pull_align">
+                                    <div class="row">
+                                        <div class="col-sm-11 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 form-group">
+                                            <label for="text_input7" class="label_height text-info">Success</label>
+                                            <input type="text" id="text_input9"
+                                                   class="input_success form-control bg-white"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 m-t-20">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">Horizontal Form</div>
+                        <div class="panel-body">
+                            <div class="col-md-12">
+                                <div class="row form-group">
+                                    <div class="col-md-4">
+                                        <label for="text_input" class="label_height text-info">Text</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" id="text_input" class="form-control"/>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-4">
+                                        <label class="text-info">Radio</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="radio" class="radio1" name="radio"/>&nbsp;<span
+                                            class="font13 text-info">Radio 1</span>
+                                        <input type="radio" class="radio1" name="radio"/>&nbsp;<span
+                                            class="font13 text-info">Radio 2</span>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-4">
+                                        <label class="text-info">Checkbox</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="checkbox">&nbsp;<span class="font13 text-info">Checkbox 1</span>
+                                        <input type="checkbox">&nbsp;<span class="font13 text-info">Checkbox 2</span>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-4">
+                                        <label class="text-info">Select</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <select class="select1">
+                                            <option value="">Choose</option>
+                                            <option value="2">Sample 1</option>
+                                            <option value="3">Sample 2</option>
+                                            <option value="4">Sample 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-4">
+                                        <label class="text-info">Textarea</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <textarea name="sample1" rows="8"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-4">
+                                        <label for="text_input1" class="label_height text-info">Warning</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" id="text_input1"
+                                               class="input_warning form-control bg-white"/>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-4">
+                                        <label for="text_input2" class="label_height text-info">Error</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" id="text_input2" class="input_danger form-control bg-white"/>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-4">
+                                        <label for="text_input3" class="label_height text-info">Info</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" id="text_input3" class="input_info form-control bg-white"/>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-4">
+                                        <label for="text_input4" class="label_height text-info">Success</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" id="text_input4"
+                                               class="input_success form-control bg-white"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+                </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12 m-t-20">
+                    <h1>Promo Box</h1>
+                    <hr>
+                </div>
+                <div class="col-md-12">
+                    <br>
+                    <div class="promo_section">
+                        <div class="promo_align">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h1 class="font26">Astrology Guide 2016</h1>
+                                </div>
+                                <div class="col-md-4">
+                                    <p class="promo_side_section text-info"><i class="fa fa-heart text-primary"></i>
+                                        Save 25% today!
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="normal_rs text-info">$23.99</span> <span class="stricked_rs">$29.99</span>
+                            <p class="promo_text_align text-info">It is a long established fact that a reader will be
+                                distracted by the readable content of a page when looking at its layout.</p>
+                            <a href="#" class="btn btn-md btn-primary ">Learn More Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12 m-t-20">
+                    <h1>Message Alerts</h1>
+                    <hr>
+                </div>
+                <div class="col-md-12 alert_messages">
+                    <br>
+                    <div class="alert alert-danger text-white">
+                        <i class="fa fa-times-circle" aria-hidden="true"></i> Error! This would be an error message.
+                    </div>
+                    <div class="alert alert-info pricing_change text-white">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i> Information! This would be an information
+                        message.
+                    </div>
+                    <div class="alert alert-warning text-white">
+                        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Warning! This would be a warnng
+                        message.
+                    </div>
+                    <div class="alert alert-success text-white">
+                        <i class="fa fa-check-circle" aria-hidden="true"></i> Success! This would be a successful
+                        message.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 m-t-40">
+            <span class='color_grey'>Style:</span>
+            <span class="color_black">Regular</span><br>
+            <span class='color_grey'>Font:</span>
+            <span class="color_black">Montserrat</span><br>
+            <span class='color_grey'>Color:</span>
+            <span class="color_black">#4b3065</span>
+            <h1 class="text-info elements_desc">Heading One 24px</h1>
+            <h2 class="text-info">Heading Two 22px</h2>
+            <h3 class="text-info">Heading Three 20px</h3>
+            <h4 class="text-info">Heading Four 18px</h4>
+            <h5 class="text-info">Heading Five 16px</h5>
+            <h6 class="text-info">Heading Six 15px</h6>
+        </div>
+        <div class="col-sm-6 m-t-40">
+            <span class='color_grey'>Style:</span>
+            <span class="color_black">Regular - All Caps</span><br>
+            <span class='color_grey'>Font:</span>
+            <span class="color_black">Montserrat</span><br>
+            <span class='color_grey'>Color:</span>
+            <span class="color_black">#4b3065</span>
+            <h1 class="text-info elements_desc">HEADING ONE 24px</h1>
+            <h2 class="text-info">HEADING TWO 22px</h2>
+            <h3 class="text-info">HEADING THREE 20px</h3>
+            <h4 class="text-info">HEADING FOUR 18px</h4>
+            <h5 class="text-info">HEADING FIVE 16px</h5>
+            <h6 class="text-info">HEADING SIX 15px</h6>
+        </div>
+    </div>
+</div>
+<section class="bg_grey m-t-40 section_align">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 m-t-40">
+                <span class='color_grey'>Style:</span>
+                <span class="color_black">Bold</span><br>
+                <span class='color_grey'>Font:</span>
+                <span class="color_black">Montserrat</span><br>
+                <span class='color_grey'>Color:</span>
+                <span class="color_black">#4b3065</span>
+                <h1 class="text-info elements_desc"><strong>Heading One 24px</strong></h1>
+                <h2 class="text-info"><strong>Heading Two 22px</strong></h2>
+                <h3 class="text-info"><strong>Heading Three 20px</strong></h3>
+                <h4 class="text-info"><strong>Heading Four 18px</strong></h4>
+                <h5 class="text-info"><strong>Heading Five 16px</strong></h5>
+                <h6 class="text-info"><strong>Heading Six 15px</strong></h6>
+            </div>
+            <div class="col-sm-6 m-t-40">
+                <span class='color_grey'>Style:</span>
+                <span class="color_black">Bold</span><br>
+                <span class='color_grey'>Font:</span>
+                <span class="color_black">Montserrat</span><br>
+                <span class='color_grey'>Color:</span>
+                <span class="color_black">#4b3065</span>
+                <h1 class="text-info elements_desc"><strong>HEADING ONE 24px</strong></h1>
+                <h2 class="text-info"><strong>HEADING TWO 22px</strong></h2>
+                <h3 class="text-info"><strong>HEADING THREE 20px</strong></h3>
+                <h4 class="text-info"><strong>HEADING FOUR 18px</strong></h4>
+                <h5 class="text-info"><strong>HEADING FIVE 16px</strong></h5>
+                <h6 class="text-info"><strong>HEADING SIX 15px</strong></h6>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 m-t-40">
+            <span class='color_grey'>Font Size Text:</span>
+            <span class="color_black">15px</span><br>
+            <span class='color_grey'>Font:</span>
+            <span class="color_black">Montserrat</span><br>
+            <span class='color_grey'>Line Spacing:</span>
+            <span class="color_black">24 pt</span><br>
+            <span class='color_grey'>Color:</span>
+            <span class="color_black">#4b3065</span>
+            <h1 class="text-info elements_desc">Heading One 24px</h1>
+            <p class="text-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto laudantium nam
+                placeat quam saepe. Debitis ducimus hic labore maiores numquam officiis reiciendis velit voluptate
+                voluptatum.</p>
+        </div>
+        <div class="col-sm-6 m-t-40">
+            <span class='color_grey'>Font Size Text:</span>
+            <span class="color_black">15px</span><br>
+            <span class='color_grey'>Font:</span>
+            <span class="color_black">Montserrat</span><br>
+            <span class='color_grey'>Line Spacing:</span>
+            <span class="color_black">24 pt</span><br>
+            <span class='color_grey'>Color:</span>
+            <span class="color_black">#4b3065</span>
+            <h1 class="text-info elements_desc">Heading Three 20px</h1>
+            <p class="text-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto laudantium nam
+                placeat quam saepe. Debitis ducimus hic labore maiores numquam officiis reiciendis velit voluptate
+                voluptatum.</p>
+        </div>
+    </div>
+</div>
+<!--=============== Body Section End ===============-->
+<!--=============== Footer Section Start ===============-->
+<section class="footer_texture m-t-65">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-xs-12 footer_section_align">
+                <span class="text-white font18">Get Your </span><span class="text-primary font24"> Daily Horoscope<span
+                    class="text-white font18">,</span> Daily Lovescope</span><span
+                    class="text-white font18"> and</span><span class="text-primary font24"> Daily Tarot </span> <span
+                    class="text-white font18">Directly In Your Inbox</span>
+            </div>
+            <div class="col-md-6 col-xs-12 footer_section_align">
+
+                <form method="post" action="subscribe.php" id="subscribe">
+                    <div class="form-group">
+
+                        <div class="input-group label_align">
+
+                            <input type="email" class="form-control input-lg input_email sub_input" placeholder="Email Address" name="email" id="email">
+
+                            <span class="input-group-addon subscribe_align">
+        <button type="submit" class="subscribe btn btn-sm ">
+                        <span>
+                            <img src="images/mail-sent.png" alt="mailicon">
+                        </span>
+                            </button>
+                        </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer_bg">
+    <div class="container footer_align">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12 m-t-40">
+                <h5>WESTERN ASTROLOGY</h5>
+                <hr>
+                <ul>
+                    <li><a href="#">My Daily Horoscope </a></li>
+                    <li><a href="#">My Weekly Horoscope</a></li>
+                    <li><a href="#">My Monthly Horoscope</a></li>
+                    <li><a href="#">My Love Horoscope</a></li>
+                    <li><a href="#">My Career Horoscope</a></li>
+                    <li><a href="#">My Wellness Horoscope</a></li>
+                    <li><a href="#">My Money Horoscope</a></li>
+                    <li><a href="#">My Food Horoscope</a></li>
+                    <li><a href="#">My Pet Horoscope</a></li>
+                    <li><a href="love_compatibility_result.html">My Love Compatibility</a></li>
+                </ul>
+                <h5 class="m-t-40">EASTERN ASTROLOGY</h5>
+                <hr>
+                <ul>
+                    <li><a href="#"> Chinese Horoscope</a></li>
+                    <li><a href="#">Chinese Sign</a></li>
+                    <li><a href="#">Chinese Compatibility</a></li>
+                    <li><a href="#">Daily I Ching</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 m-t-40">
+                <h5>UNIQUE TAROT READINGS</h5>
+                <hr>
+                <ul>
+                    <li><a href="games.html">Daily Career Tarot</a></li>
+                    <li><a href="games.html">Instant Answer Tarot</a></li>
+                    <li><a href="games.html">Power Tarot</a></li>
+                    <li><a href="games.html">Angel Tarot Reading</a></li>
+                    <li><a href="games.html">Zen Tarot Reading</a></li>
+                    <li><a href="games.html">White Magic Tarot</a></li>
+                    <li><a href="games.html">Egyptian Tarot</a></li>
+                </ul>
+                <h5 class="m-t-40">FORECAST TAROT READING</h5>
+                <hr>
+                <ul>
+                    <li><a href="signs_single_post.html">Daily Tarot Reading</a></li>
+                    <li><a href="signs_single_post.html">Today / Tomorrow Tarot</a></li>
+                    <li><a href="signs_single_post.html">Weekly Tarot Reading</a></li>
+                </ul>
+                <h5 class="m-t-40">LOVE TAROT READING</h5>
+                <hr>
+                <ul>
+                    <li><a href="love_compatibility.html">Love Potential Tarot</a></li>
+                    <li><a href="love_compatibility.html">Breakup Tarot Reading</a></li>
+                </ul>
+            </div>
+            <div class="clearfix visible-sm-block"></div>
+            <div class="col-md-3 col-sm-6 col-xs-12 m-t-40">
+                <h5>ZODIAC SIGN FINDER</h5>
+                <hr>
+                <p class="p-t-5">The Zodiac is made up of 12 Sun Signs. Your Date of Birth determines which one you are:</p>
+                <div class="col-md-12 footer_select_section">
+                    <select class="single form-control footer_select month">
+                        <option value="">Choose</option>
+                        <option value="1">Jan</option>
+                        <option value="2">Feb</option>
+                        <option value="3">Mar</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">Jun</option>
+                        <option value="7">July</option>
+                        <option value="8">Aug</option>
+                        <option value="9">Sep</option>
+                        <option value="10">Oct</option>
+                        <option value="11">Nov</option>
+                        <option value="12">Dec</option>
+                    </select>
+                    <div class="footer_select_section">
+                        <select class="single form-control footer_select2 day">
+                            <option value="">Choose</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                        </select>
+                        <button class="btn btn-sm btn-primary clear_btn zodiacname">Submit</button>
+                    </div>
+                </div>
+
+                <div class="row elements_inline">
+                    <div class="col-md-12 select2_number">
+                        <h5 class="m-t-40">LOTTO NUMBER GENERATOR</h5>
+                        <hr>
+                        <span>Pick </span>
+                        <span class="footer_select2_section footer_select_section">
+                            <select class="footer_select3 foot_text_area var1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select>
+                        </span>
+                        <span> numbers, from 1</span>
+                        <span>through </span>
+                        <span class="footer_select_section footer_select2_section ">
+                            <select class="footer_select3 var2">
+                                <option>35</option>
+                                <option>36</option>
+                                <option>37</option>
+                                <option>38</option>
+                                <option>39</option>
+                                <option>40</option>
+                                <option>41</option>
+                                <option>42</option>
+                                <option>43</option>
+                                <option>44</option>
+                                <option>45</option>
+                                <option>46</option>
+                                <option>47</option>
+                                <option>48</option>
+                                <option>49</option>
+                                <option>50</option>
+                                <option>51</option>
+                                <option>52</option>
+                                <option>53</option>
+                                <option>54</option>
+                           </select>
+                        </span>
+                        <p hidden class="pararesult"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <textarea disabled class="foot_text_area form-control result" rows="3"
+                                  placeholder='Insert numbers with "," between'></textarea>
+                        <button class="btn btn-primary clear_btn btn-sm go">Submit</button>
+                        <button class="btn btn-sm btn-default clear_btn clear">Clear</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 m-t-40">
+                <h5>ADVERTISEMENT</h5>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-12 m-t-10">
+                        <img src="images/270.png" alt="ad" class="img-responsive center-block"/>
+                    </div>
+                </div>
+                <div class="row m-t-20">
+                    <div class="col-xs-6">
+                        <img src="images/126.png" alt="ad" class="img-responsive center-block"/>
+                    </div>
+                    <div class="col-xs-6">
+                        <img src="images/126.png" alt="ad" class="img-responsive center-block"/>
+                    </div>
+                </div>
+                <div class="row m-t-20">
+                    <div class="col-xs-6">
+                        <img src="images/126.png" alt="ad" class="img-responsive center-block"/>
+                    </div>
+                    <div class="col-xs-6">
+                        <img src="images/126.png" alt="ad" class="img-responsive center-block"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="elements_desc">
+            <hr>
+        </div>
+        <div class="row text-center">
+            <p>made with &nbsp;<img src="images/heartf.png" alt="heart loading"/>&nbsp; by
+                <a href="https://themeforest.net/user/jyostna"
+                   class="footer_color_variant">jyostna</a></p>
+        </div>
+        <a href="#" class="back-to-top">
+            <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+        </a>
+    </div>
+</section>
+<!--=============== Footer Section End ===============-->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="vendors/swiper/js/swiper.min.js"></script>
+<script type="text/javascript" src="vendors/select2/js/select2.min.js"></script>
+<script type="text/javascript" src="vendors/iCheck/js/icheck.js"></script>
+<script type="text/javascript" src="vendors/sweetalert2/js/sweetalert2.min.js"></script>
+<script src="vendors/wow/js/wow.min.js"></script>
+<!--=============== Custom Js Start ===============-->
+<script src="js/custom.js"></script>
+<!--=============== Custom Js End ===============-->
+</body>
+</html>

@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Blog | Astrology</title>
+    <!--=============== Global Css Start ===============-->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendors/select2/css/select2.min.css">
+    <link rel="stylesheet" href="vendors/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/sweetalert2.css">
+    <link rel="stylesheet" href="vendors/bootstrap_select2/css/select2-bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/wow/css/animate.css">
+    <link rel="stylesheet" href="src/vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/wow/css/animate.css">
+    <!--=============== Global Css End ===============-->
+    <!--=============== Custom Css Start ===============-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!--=============== Custom Css End ===============-->
+</head>
+<body>
+<!--=============== Preloader Section Start ===============-->
+<div class="preloader" style="position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  backface-visibility: hidden;
+  background: #ffffff;">
+    <div class="preloader-image" style="position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -150px 0 0 -300px;">
+        <img src="images/preloader.gif" alt="loader-missing">
+    </div>
+</div>
+<!--=============== Preloader Section End ===============-->
+<!--=============== Header Section Start ===============-->
+<section class="backgroundclr">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 tpbanner_align">
+                <a href="#" class="header_border1 hidden-xs font12">Advertise With Us</a>
+                <div class="header_border hidden-xs font12">Language:
+                    <ul>
+                        <li class="dropdown lang_dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">EN <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Hindi</a></li>
+                                <li><a href="#">English</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix visible-xs-block"></div>
+                <span class="header_border header_text hidden-xs font12">Follow Us</span>
+                <span class="head_icons"><a href="#"><i class="fa fa-facebook-square header_icons fa-lg"></i></a>
+                      <a href="#"><i class="fa fa-twitter-square header_icons fa-lg"></i></a>
+                      <a href="#"><i class="fa fa-google-plus-square header_icons fa-lg" aria-hidden="true"></i></a>
+                </span>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+    <div class="row text-right">
+        <div class="col-md-5 col-sm-2"></div>
+        <div class="col-md-7 col-sm-10 col-xs-12">
+            <div class="clearfix visible-sm-block"></div>
+            <div class="row">
+                <div class="col-sm-2 col-xs-2 head_signs">
+                    <a href="#">
+                        <div class="bg-info header_bg center-block">
+                            <img src="images/dislike.png" alt="Image missing">
+                        </div>
+                        <div class="text-center info1 font13 hidden-xs">Secret Crush</div>
+                    </a>
+                </div>
+                <div class="col-sm-2 col-xs-2 text-center head_signs">
+                    <a href="#">
+                        <div class="bg-info header_bg center-block">
+                            <img src="images/head.png" alt="Image missing">
+                        </div>
+                        <div class="text-center info1 font13 hidden-xs">Psychics</div>
+                    </a>
+                </div>
+                <div class="col-sm-2 col-xs-2 text-center head_signs">
+                    <a href="#">
+                        <div class="bg-info header_bg center-block">
+                            <img src="images/heart.png" alt="Image missing">
+                        </div>
+                        <div class="text-center info1 font13 hidden-xs">Love Tarot</div>
+                    </a>
+                </div>
+
+                <div class="col-sm-2 col-xs-2 text-center head_signs">
+                    <a href="#">
+                        <div class="bg-info header_bg center-block">
+                            <img src="images/man-with-tie.png" alt="Image missing">
+                        </div>
+                        <div class="text-center info1 font13 hidden-xs">Career Match</div>
+                    </a>
+                </div>
+                <div class="col-sm-2 col-xs-2 text-center head_signs">
+                    <a href="#">
+                        <div class="bg-info header_bg center-block">
+                            <img src="images/yin-and-yang.png" alt="Image missing">
+                        </div>
+                        <div class="text-center info1 font13 hidden-xs">Ying Yang</div>
+                    </a>
+                </div>
+                <div class="col-sm-2 col-xs-2 text-center head_signs">
+                    <a href="#">
+                        <div class="bg-info header_bg center-block">
+                            <img src="images/calendar.png" alt="Image missing">
+                        </div>
+                        <div class="text-center info1 font13 hidden-xs">Daily Tarot</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header col-md-4 col-sm-5 col-xs-12 nav_head">
+                    <button type="button" class="navbar-toggle m-t-20 font18" data-toggle="collapse"
+                            data-target="#myNavbar">
+                        <span>
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                    <a href="index.html">
+                        <img src="images/leo-sign1.png" alt="logo missing" class="brand_name"> <span
+                            class="text-info font42">Astrology</span>
+                    </a>
+                    <p class="brand_name text-primary font12 head_info">KNOW YOUR SIGN</p>
+
+                </div>
+                <div class="navbar-collapse collapse col-md-8 col-sm-7 col-xs-12 nav navbar-right nav_menubar"
+                     id="myNavbar">
+                    <ul class="nav navbar-nav header_nav">
+                        <li class="header_li active">
+                            <a href="index.html" class="text-info">
+                                <i class="fa fa-home" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="header_li">
+                            <a href="signs.html" class="text-info">Astrology Signs</a>
+                        </li>
+                        <li class="header_li">
+                            <a href="gemstones.html" class="text-info">Gemstones</a>
+                        </li>
+
+                        <li class="header_li">
+                            <a href="love_compatibility.html" class="text-info"><i class="fa fa-heart"></i>  Compatibility</a>
+                        </li>
+                        <li class="header_li">
+                            <a href="games.html" class="text-info">Games</a>
+                        </li>
+                        <li class="header_li">
+                            <a href="blog.html" class="text-info">Blog</a>
+                        </li>
+                        <li class="dropdown dropdown_modified">
+                            <a data-toggle="dropdown" href="#" class="text-info dropdown-toggle">Pages <span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu dropdown_mod" data-dropdown-in="fadeInUp"
+                                data-dropdown-out="fadeOut">
+                                <li><a href="index2.html">Home Page2</a></li>
+                                <li><a href="blog_single.html">Blog Single Post</a></li>
+                                <li><a href="blog_category.html">Blog Category</a></li>
+                                <li><a href="signs_single_post.html">Signs Single Page</a></li>
+                                <li><a href="gemstones_single.html">Gemstones Single Page</a></li>
+                                <li><a href="love_compatibility_result.html">Love Compatibility Result</a></li>
+                                <li><a href="elements.html">Elements</a></li>
+                            </ul>
+                        </li>
+                        <li class="header_li">
+                            <a href="contact_us.html" class="text-info">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="index_center card_text">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="m-t-20 bg-white breadcrumb text-center">
+                    <li>
+                        <a href="index.html" class="font13">Home</a>
+                    </li>
+                    <li>
+                        <img src="images/right-arrow1.png" alt="arrow" class="blog_right_arrow">
+                    </li>
+                    <li>
+                        <span class="active text-primary font13">Blog</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--=============== Header Section End ===============-->
+<!--=============== Body Section Start ===============-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 m-t-26 hr_bottom_align">
+            <h1 class="text-primary">Blog Articles</h1>
+            <hr>
+            <div class="row">
+                <div class="col-md-6 m-t-40">
+                    <img src="images/blogimg1.1.png" class="img-responsive" alt="card loading"/>
+                    <div class="card_mask text-center text-white bg-info">
+                        <p>LOVE AND
+                        RELATIONSHIPS</p>
+                    </div>
+                    <div class="card_content text-left blog_card">
+                        <ul class="m-t-20 footer_text_height">
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>Why
+                                    You're Still Single?
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>Tired of
+                                    Waiting For Love?
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>Predict
+                                    Your Love Life
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>Find Love
+                                    Now!
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="text-right blog_card_menu">
+                            <a href="blog_category.html">
+                                <img src="images/list.png" alt="list">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 m-t-40">
+                    <img src="images/blogimg2.1.png" class="img-responsive" alt="card loading"/>
+                    <div class="card_mask text-center text-white bg-info">
+                        <p>ALL ASTROLOGY</p>
+                    </div>
+                    <div class="card_content text-left blog_card">
+                        <ul class="m-t-20 footer_text_height">
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>
+                                    Is It Too Soon To Have Sex?
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>
+                                    Spring Brake Horoscope
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>
+                                    Does The Moon Make Crazy?
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>
+                                    Eco-friendly Astrology
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="text-right blog_card_menu">
+                            <a href="blog_category.html">
+                                <img src="images/list.png" alt="list">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 m-t-40">
+                    <img src="images/blogimg3.1.png" class="img-responsive" alt="card loading"/>
+                    <div class="card_mask text-center text-white bg-info">
+                        <p>HEALTH AND BEAUTY</p>
+                    </div>
+                    <div class="card_content  text-left blog_card">
+                        <ul class="m-t-20 footer_text_height">
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>
+                                    Spring Brake Horoscope
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>
+                                    Never Ignore These Dreams
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>
+                                    Cheers To The Iresh
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>
+                                    Diet By Sign
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="text-right blog_card_menu">
+                            <a href="blog_category.html">
+                                <img src="images/list.png" alt="list">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 m-t-40">
+                    <img src="images/blogimg4.png" class="img-responsive" alt="card loading">
+                    <div class="card_mask text-center text-white bg-info">
+                        <p>ENTERTAINMENT</p>
+                    </div>
+                    <div class="card_content  text-left blog_card ">
+                        <ul class="m-t-20 footer_text_height">
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>
+                                    Libra Celebrity Stars
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>
+                                    Star-Power Your Accessories
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>
+                                    Capricorn Celebrity Stars
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>
+                                    Leo Celebrity Stars
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="text-right blog_card_menu">
+                            <a href="blog_category.html">
+                                <img src="images/list.png" alt="list">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 m-t-40">
+                    <img src="images/blogimg5.png" class="img-responsive" alt="card loading">
+                    <div class="card_mask text-center text-white bg-info">
+                        <p>PSYCHICS</p>
+                    </div>
+                    <div class="card_content text-left blog_card">
+                        <ul class="m-t-20 footer_text_height">
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>
+                                    7 Ways To Make Wishes Come True
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>
+                                    Can Your Pet Read Your Mind?
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>
+                                    Celebrities & Psychics
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>
+                                    Stop Falling For Lies!
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="text-right blog_card_menu">
+                            <a href="blog_category.html">
+                                <img src="images/list.png" alt="list">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 m-t-40">
+                    <img src="images/blogimg6.png" class="img-responsive" alt="card loading"/>
+                    <div class="card_mask text-center text-white bg-info">
+                        <p>CAREER AND MONEY</p>
+                    </div>
+                    <div class="card_content  text-left blog_card">
+                        <ul class="m-t-20 footer_text_height">
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>
+                                    Think Money, Make Money
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>
+                                    Win Big! Gambling Tips Sign
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>
+                                    Are You Financially Compatible or not?
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>
+                                    Try These Lucky Numbers!
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="text-right blog_card_menu">
+                            <a href="blog_category.html">
+                                <img src="images/list.png" alt="list">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 m-t-40">
+                    <img src="images/blogimg7.png" class="img-responsive" alt="card loading">
+                    <div class="card_mask text-center text-white bg-info">
+                        <p>DREAMS</p>
+                    </div>
+                    <div class="card_content text-left blog_card ">
+                        <ul class="m-t-20 footer_text_height">
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>
+                                    Top 10 Dreams Explained
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>
+                                    Never Ignore These Dreams!
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>
+                                    Soul Mate Fate or Fantasy?
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>
+                                    Are You a Lucid Dreamer?
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="text-right blog_card_menu">
+                            <a href="blog_category.html">
+                                <img src="images/list.png" alt="list">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 m-t-40">
+                    <img src="images/blogimg8.png" class="img-responsive" alt="card loading"/>
+                    <div class="card_mask text-center text-white bg-info">
+                        <p>EASTERN ASTROLOGY</p>
+                    </div>
+                    <div class="card_content  text-left blog_card">
+                        <ul class="m-t-20 footer_text_height">
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>
+                                    Turn Him On!
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>
+                                    6 Things to Throw Away Now!
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>
+                                    Avoid These Workspace Traps!
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog_single.html">
+                                    <img src="images/right-arrow1.png" alt="arrow" class="arrow_right"/>
+                                    Create a Love Den
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="text-right blog_card_menu">
+                            <a href="blog_category.html">
+                                <img src="images/list.png" alt="list">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-xs-12 m-t-40">
+                    <h5 class="text-center bg-info text-white right_sidebar_dimension font14">YOUR INSIGHTS</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 font16 games_align">
+                    <p class="common_margin  wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <a href="#">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp; 2016 Horoscope
+                        </a>
+                    </p>
+                    <hr class="hr_margin">
+                    <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <a href="#" class="insight-color">
+                            <i class="fa fa-eye" aria-hidden="true"></i> &nbsp;Psychic Readings
+                        </a>
+                    </p>
+                    <hr class="hr_margin">
+                    <p class=" wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <a href="#" class="insight-color">
+                            <i class="fa fa-certificate" aria-hidden="true"></i> &nbsp;Forecast
+                        </a>
+                    </p>
+                    <hr class="hr_margin">
+                    <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <a href="#" class="insight-color">
+                            <i class="fa fa-heart" aria-hidden="true"></i> &nbsp;Love & sex
+                        </a>
+                    </p>
+                    <hr class="hr_margin">
+                    <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <a href="#" class="insight-color">
+                            <i class="fa fa-briefcase" aria-hidden="true"></i> &nbsp;Job & Career
+                        </a>
+                    </p>
+                    <hr class="hr_margin">
+                    <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <a href="#" class="insight-color">
+                            <i class="fa fa-money" aria-hidden="true"></i> &nbsp;Money Horoscope
+                        </a>
+                    </p>
+                    <hr class="hr_margin">
+                    <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <a href="#" class="insight-color">
+                            <i class="fa fa-leaf" aria-hidden="true"></i> &nbsp;Wellness Horoscope
+                        </a>
+                    </p>
+                    <hr class="hr_margin">
+                    <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <a href="#" class="insight-color">
+                            <i class="fa fa-male" aria-hidden="true"></i> &nbsp;Teen Horoscope
+                        </a>
+                    </p>
+                    <hr class="hr_margin">
+                    <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <a href="#" class="insight-color">
+                            <i class="fa fa-cutlery" aria-hidden="true"></i> &nbsp;Food Horoscope
+                        </a>
+                    </p>
+                    <hr class="hr_margin">
+                </div>
+            </div>
+            <div class="p-t-10">
+                <h1 class="aries_color">Popular Quizes</h1>
+            </div>
+            <div class="arrows_align">
+                <a href="#">
+                    <i class="fa fa-long-arrow-left previous-arrow text-info" aria-hidden="true"></i>
+                </a> &nbsp;&nbsp;
+                <a href="#">
+                    <i class="fa fa-long-arrow-right next-arrow text-info" aria-hidden="true"></i>
+                </a>
+            </div>
+            <hr class="hr_margin">
+            <div class="row common_margin">
+                <div class="col-xs-12 first-set">
+                    <div class="swiper-container love-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <p class="font16">
+                                    <a href="#" class="text-info color-info">What Sign Should You Date?</a><br>
+                                    <small class="text-cancer font13">10 Questions</small>
+                                </p>
+                                <hr class="hr_margin">
+                                <p class="font16">
+                                    <a href="#" class="text-info color-info">What intuitive power do You Have?</a><br>
+                                    <small class="text-cancer font13">12 Questions</small>
+                                </p>
+
+                                <hr class="hr_margin">
+                                <p class="font16">
+                                    <a href="#" class="text-info color-info">What element are you?</a><br>
+                                    <small class="text-cancer font13">8 Questions</small>
+                                </p>
+                                <hr class="hr_margin">
+
+                                <p class="font16">
+                                    <a href="#" class="text-info color-info">What's your real top priority in life?</a><br>
+                                    <small class="text-cancer font13">11 Questions</small>
+                                </p>
+                                <hr class="hr_margin">
+                                <p class="font16">
+                                    <a href="#" class="text-info color-info">What's In Your Immediate Future?</a><br>
+                                    <small class="text-cancer font13">15 Questions</small>
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <p class="font16">
+                                    <a href="#" class="text-info color-info">What Sign Should You Date?</a><br>
+                                    <small class="text-cancer font13">10 Questions</small>
+                                </p>
+                                <hr class="hr_margin">
+                                <p class="font16">
+                                    <a href="#" class="text-info color-info">What intuitive power do You Have?</a><br>
+                                    <small class="text-cancer font13">12 Questions</small>
+                                </p>
+
+                                <hr class="hr_margin">
+                                <p class="font16">
+                                    <a href="#" class="text-info color-info">What element are you?</a><br>
+                                    <small class="text-cancer font13">8 Questions</small>
+                                </p>
+                                <hr class="hr_margin">
+
+                                <p class="font16">
+                                    <a href="#" class="text-info color-info">What's your real top priority in life?</a><br>
+                                    <small class="text-cancer font13">11 Questions</small>
+                                </p>
+                                <hr class="hr_margin">
+                                <p class="font16">
+                                    <a href="#" class="text-info color-info">What's In Your Immediate Future?</a><br>
+                                    <small class="text-cancer font13">15 Questions</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 p-t-10">
+                    <h1 class="aries_color">
+                        Top Stories
+                    </h1>
+                    <hr class="hr_margin">
+                </div>
+            </div>
+            <div class="row common_margin">
+                <div class="col-xs-12 font16">
+                    <p class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <i class="fa fa-circle text-libra font14" aria-hidden="true"></i> &nbsp;
+                        <span class="text-libra">Libra</span>:
+                        <span class="text-info">Signs a Libra hates you</span>
+                    </p>
+                    <hr class="hr_margin">
+                    <p class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <i class="fa fa-circle text-taurus font14" aria-hidden="true"></i> &nbsp;
+                        <span class="text-taurus">Taurus</span>:
+                        <span class="text-info">Ease Taurus's Financial Stress</span>
+                    </p>
+                    <hr class="hr_margin">
+                    <p class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <i class="fa fa-circle text-gemini font14" aria-hidden="true"></i> &nbsp;
+                        <span class="text-gemini">Gemini</span>:
+                        <span class="text-info">Summer Love for Gemini</span>
+                    </p>
+                    <hr class="hr_margin">
+                    <p class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <i class="fa fa-circle text-aries font14" aria-hidden="true"></i> &nbsp;
+                        <span class="text-aries">Aries</span>:
+                        <span class="text-info">Aries Should Explore</span>
+                    </p>
+                    <hr class="hr_margin">
+                    <p class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <i class="fa fa-circle text-cancer font14" aria-hidden="true"></i> &nbsp;
+                        <span class="text-cancer">Cancer</span>:
+                        <span class="text-info">The Smartest Investments</span>
+                    </p>
+                    <hr class="hr_margin">
+                    <p class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <i class="fa fa-circle text-virgo font14" aria-hidden="true"></i> &nbsp;
+                        <span class="text-virgo">Virgo</span>:
+                        <span class="text-info">Virgo's Own Mistakes</span>
+                    </p>
+                    <hr class="hr_margin">
+                    <p class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <i class="fa fa-circle text-sagittarius font14" aria-hidden="true"></i> &nbsp;
+                        <span class="text-sagittarius">Sagittarius</span>:
+                        <span class="text-info">Always Aiming High</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--=============== Body Section End ===============-->
+<!--=============== Footer Section Start ===============-->
+<section class="footer_texture m-t-65">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-xs-12 footer_section_align">
+                <span class="text-white font18">Get Your </span><span class="text-primary font24"> Daily Horoscope<span
+                    class="text-white font18">,</span> Daily Lovescope</span><span
+                    class="text-white font18"> and</span><span class="text-primary font24"> Daily Tarot </span> <span
+                    class="text-white font18">Directly In Your Inbox</span>
+            </div>
+            <div class="col-md-6 col-xs-12 footer_section_align">
+
+                <form method="post" action="subscribe.php" id="subscribe">
+                    <div class="form-group">
+
+                        <div class="input-group label_align">
+
+                            <input type="email" class="form-control input-lg input_email sub_input" placeholder="Email Address" name="email" id="email">
+
+                            <span class="input-group-addon subscribe_align">
+        <button type="submit" class="subscribe btn btn-sm ">
+                        <span>
+                            <img src="images/mail-sent.png" alt="mailicon">
+                        </span>
+                            </button>
+                        </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer_bg">
+    <div class="container footer_align">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12 m-t-40">
+                <h5>WESTERN ASTROLOGY</h5>
+                <hr>
+                <ul>
+                    <li><a href="#">My Daily Horoscope </a></li>
+                    <li><a href="#">My Weekly Horoscope</a></li>
+                    <li><a href="#">My Monthly Horoscope</a></li>
+                    <li><a href="#">My Love Horoscope</a></li>
+                    <li><a href="#">My Career Horoscope</a></li>
+                    <li><a href="#">My Wellness Horoscope</a></li>
+                    <li><a href="#">My Money Horoscope</a></li>
+                    <li><a href="#">My Food Horoscope</a></li>
+                    <li><a href="#">My Pet Horoscope</a></li>
+                    <li><a href="love_compatibility_result.html">My Love Compatibility</a></li>
+                </ul>
+                <h5 class="m-t-40">EASTERN ASTROLOGY</h5>
+                <hr>
+                <ul>
+                    <li><a href="#"> Chinese Horoscope</a></li>
+                    <li><a href="#">Chinese Sign</a></li>
+                    <li><a href="#">Chinese Compatibility</a></li>
+                    <li><a href="#">Daily I Ching</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 m-t-40">
+                <h5>UNIQUE TAROT READINGS</h5>
+                <hr>
+                <ul>
+                    <li><a href="games.html">Daily Career Tarot</a></li>
+                    <li><a href="games.html">Instant Answer Tarot</a></li>
+                    <li><a href="games.html">Power Tarot</a></li>
+                    <li><a href="games.html">Angel Tarot Reading</a></li>
+                    <li><a href="games.html">Zen Tarot Reading</a></li>
+                    <li><a href="games.html">White Magic Tarot</a></li>
+                    <li><a href="games.html">Egyptian Tarot</a></li>
+                </ul>
+                <h5 class="m-t-40">FORECAST TAROT READING</h5>
+                <hr>
+                <ul>
+                    <li><a href="signs_single_post.html">Daily Tarot Reading</a></li>
+                    <li><a href="signs_single_post.html">Today / Tomorrow Tarot</a></li>
+                    <li><a href="signs_single_post.html">Weekly Tarot Reading</a></li>
+                </ul>
+                <h5 class="m-t-40">LOVE TAROT READING</h5>
+                <hr>
+                <ul>
+                    <li><a href="love_compatibility.html">Love Potential Tarot</a></li>
+                    <li><a href="love_compatibility.html">Breakup Tarot Reading</a></li>
+                </ul>
+            </div>
+            <div class="clearfix visible-sm-block"></div>
+            <div class="col-md-3 col-sm-6 col-xs-12 m-t-40">
+                <h5>ZODIAC SIGN FINDER</h5>
+                <hr>
+                <p class="p-t-5">The Zodiac is made up of 12 Sun Signs. Your Date of Birth determines which one you are:</p>
+                <div class="col-md-12 footer_select_section">
+                    <select class="single form-control footer_select month">
+                        <option value="">Choose</option>
+                        <option value="1">Jan</option>
+                        <option value="2">Feb</option>
+                        <option value="3">Mar</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">Jun</option>
+                        <option value="7">July</option>
+                        <option value="8">Aug</option>
+                        <option value="9">Sep</option>
+                        <option value="10">Oct</option>
+                        <option value="11">Nov</option>
+                        <option value="12">Dec</option>
+                    </select>
+                    <div class="footer_select_section">
+                        <select class="single form-control footer_select2 day">
+                            <option value="">Choose</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                        </select>
+                        <button class="btn btn-sm btn-primary clear_btn zodiacname">Submit</button>
+                    </div>
+                </div>
+
+                <div class="row elements_inline">
+                    <div class="col-md-12 select2_number">
+                        <h5 class="m-t-40">LOTTO NUMBER GENERATOR</h5>
+                        <hr>
+                        <span>Pick </span>
+                        <span class="footer_select2_section footer_select_section">
+                            <select class="footer_select3 foot_text_area var1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select>
+                        </span>
+                        <span> numbers, from 1</span>
+                        <span>through </span>
+                        <span class="footer_select_section footer_select2_section ">
+                            <select class="footer_select3 var2">
+                                <option>35</option>
+                                <option>36</option>
+                                <option>37</option>
+                                <option>38</option>
+                                <option>39</option>
+                                <option>40</option>
+                                <option>41</option>
+                                <option>42</option>
+                                <option>43</option>
+                                <option>44</option>
+                                <option>45</option>
+                                <option>46</option>
+                                <option>47</option>
+                                <option>48</option>
+                                <option>49</option>
+                                <option>50</option>
+                                <option>51</option>
+                                <option>52</option>
+                                <option>53</option>
+                                <option>54</option>
+                           </select>
+                        </span>
+                        <p hidden class="pararesult"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <textarea disabled class="foot_text_area form-control result" rows="3"
+                                  placeholder='Insert numbers with "," between'></textarea>
+                        <button class="btn btn-primary clear_btn btn-sm go">Submit</button>
+                        <button class="btn btn-sm btn-default clear_btn clear">Clear</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 m-t-40">
+                <h5>ADVERTISEMENT</h5>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-12 m-t-10">
+                        <img src="images/270.png" alt="ad" class="img-responsive center-block"/>
+                    </div>
+                </div>
+                <div class="row m-t-20">
+                    <div class="col-xs-6">
+                        <img src="images/126.png" alt="ad" class="img-responsive center-block"/>
+                    </div>
+                    <div class="col-xs-6">
+                        <img src="images/126.png" alt="ad" class="img-responsive center-block"/>
+                    </div>
+                </div>
+                <div class="row m-t-20">
+                    <div class="col-xs-6">
+                        <img src="images/126.png" alt="ad" class="img-responsive center-block"/>
+                    </div>
+                    <div class="col-xs-6">
+                        <img src="images/126.png" alt="ad" class="img-responsive center-block"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="elements_desc">
+            <hr>
+        </div>
+        <div class="row text-center">
+            <p>made with &nbsp;<img src="images/heartf.png" alt="heart loading"/>&nbsp; by
+                <a href="https://themeforest.net/user/jyostna"
+                   class="footer_color_variant">jyostna</a></p>
+        </div>
+        <a href="#" class="back-to-top">
+            <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+        </a>
+    </div>
+</section>
+<!--=============== Footer Section End ===============-->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="vendors/select2/js/select2.min.js"></script>
+<script src="vendors/swiper/js/swiper.min.js"></script>
+<script src="vendors/sweetalert2/js/sweetalert2.min.js"></script>
+<script src="vendors/wow/js/wow.min.js"></script>
+<!--=============== Custom Js Start ===============-->
+<script src="js/custom.js"></script>
+<!--=============== Custom Js End ===============-->
+</body>
+</html>
